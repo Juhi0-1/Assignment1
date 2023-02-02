@@ -28,7 +28,7 @@ function ResetCenterView(props) {
 
   return null;
 }
-//yahan pe kia h change bas.
+
 export default function Map(props) {
   const { selectPosition ,location, temperature} = props;
   const locationSelection = [selectPosition?.lat, selectPosition?.lon];
@@ -46,7 +46,7 @@ export default function Map(props) {
       {selectPosition && (
         <Marker position={locationSelection} icon={icon}>
           <Popup>
-          {location}  <br /> {temperature}
+          A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
         </Marker>
       )}
